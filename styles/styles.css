@@ -63,10 +63,95 @@ color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     position: relative;
+}
+.hero-content{
+display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+}
+.hero-visual{
+    position: relative;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .circle-pic{
     position: absolute;
-    left: 650px;
-    top: 110px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
 }
+.mic-pic{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  z-index: 2;
+}
+.head{
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+.text{
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+.buttons{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+.btn-2, .btn-3{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn-2{
+  border: none;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(#F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+     padding: 12px 20px;
+}
+.btn-2:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(145, 0, 248, 0.4);
+}
+.btn-3{
+  border: 1px solid #00FF88;
+  font-size: 16px;
+  color: #00FF88;
+  background: transparent;
+  gap:8px;
+  padding: 12px 20px;
+}
+.btn-3:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(145, 0, 248, 0.4);
+}
+
