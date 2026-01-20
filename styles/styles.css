@@ -57,12 +57,16 @@ color: white;
 }
 .hero{
     margin: 0 auto;
+    height: 760px;
     justify-items: center;
     background-image: url("./assets/hero-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-.mic-pic img{
-    background-image: url(./assets/hero-circle.png);
+.circle-pic{
+    position: absolute;
+    left: 650px;
+    top: 110px;
 }
